@@ -47,7 +47,7 @@ def ejercicio1():
             return "Error en los datos del formulario. Asegúrate de que los campos numéricos sean correctos.", 400
     return render_template('ejercicio1.html')
 
-# Ruta para el login (asumido como Ejercicio 2)
+# Ruta para el login
 @app.route('/ejercicio2', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -66,6 +66,6 @@ def login():
     return render_template('ejercicio2.html')
 
 
-# Punto de entrada para ejecutar la aplicación
+# Ejecución de la aplicación
 if __name__ == '__main__':
     app.run(debug=True)
